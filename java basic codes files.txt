@@ -1,0 +1,290 @@
+public class ifsample{
+
+     public static void main(String []args){
+        System.out.println("akshar3");
+        int x , y ;
+        x=10 ;
+        y = 20;
+        if(x<y)System.out.println("x is greater");
+        x=x*2;
+        if(x==y)System.out.println("x is equal to y ");
+        x=x*2;
+        if(x>y)System.out.println("x is smaller than to y" );
+        
+     }
+}
+output 
+$javac ifsample.java
+$java -Xmx128M -Xms16M ifsample
+akshar3
+x is greater
+x is equal to y 
+x is smaller than to y
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public class forsample{
+
+     public static void main(String []args){
+        System.out.println("akshar4");
+        int a ;
+        for(a=0 ; a<=19 ; a++)
+        System.out.println("this is value of a :"  + a);
+        
+    }
+}
+output
+$javac forsample.java
+$java -Xmx128M -Xms16M forsample
+akshar4
+this is value of a :0
+this is value of a :1
+this is value of a :2
+this is value of a :3
+this is value of a :4
+this is value of a :5
+this is value of a :6
+this is value of a :7
+this is value of a :8
+this is value of a :9
+this is value of a :10
+this is value of a :11
+this is value of a :12
+this is value of a :13
+this is value of a :14
+this is value of a :15
+this is value of a :16
+this is value of a :17
+this is value of a :18
+this is value of a :19
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public class blocktest{
+
+     public static void main(String []args){
+        System.out.println("akshar5");
+        int x , y ;
+        y = 20 ;
+        for(x =0 ; x<10 ; x++){
+            System.out.println("this is value x:" + x);
+            System.out.println("This is value y:"
+            + y );
+            y = y+2 ;
+             System.out.println("this is value y:"
+            + y );
+            y = y -3 ;
+        }
+     }
+}
+output
+$javac blocktest.java
+$java -Xmx128M -Xms16M blocktest
+akshar5
+this is value x:0
+This is value y:20
+this is value y:22
+this is value x:1
+This is value y:19
+this is value y:21
+this is value x:2
+This is value y:18
+this is value y:20
+this is value x:3
+This is value y:17
+this is value y:19
+this is value x:4
+This is value y:16
+this is value y:18
+this is value x:5
+This is value y:15
+this is value y:17
+this is value x:6
+This is value y:14
+this is value y:16
+this is value x:7
+This is value y:13
+this is value y:15
+this is value x:8
+This is value y:12
+this is value y:14
+this is value x:9
+This is value y:11
+this is value y:13
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public class light{
+
+     public static void main(String []args){
+        System.out.println("akshar6");
+        int lightspeed;
+        long days ;
+        long seconds ;
+        long distance ;
+        
+        lightspeed = 186000;
+        days = 1000 ;
+        seconds = days *24 *60*60 ;
+        distance = lightspeed * seconds ;
+        
+        System.out.println("in "+ days);
+        System.out.println("days light will travel" );
+        System.out.println(   distance + "miles");
+     }
+}
+output 
+$javac light.java
+$java -Xmx128M -Xms16M light
+akshar6
+in 1000
+days light will travel
+16070400000000miles
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public class area{
+
+     public static void main(String []args){
+        System.out.println("akshar7");
+        double pie , r , area;
+        r = 10.8;
+        pie = 3.14;
+        area = pie * r * r ;
+        System.out.println("area " + area);
+     }
+}
+output
+$javac area.java
+$java -Xmx128M -Xms16M area
+akshar7
+area 366.2496000000001
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public class chardemo{
+
+     public static void main(String []args){
+        System.out.println("akshar8");
+        char ch1 , ch2 ;
+        
+        ch1 =85;
+        ch2 ='y';
+        System.out.println(ch1 + "   " + ch2);
+        
+    }
+}
+output
+$javac chardemo.java
+$java -Xmx128M -Xms16M chardemo
+akshar8
+U   y
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public class chardemo2{
+
+     public static void main(String []args){
+        System.out.println("akshar9");
+        char ch;
+         
+         ch='A' ;
+         System.out.println("ch1 is now " +  ch);
+         
+         ch++ ;
+         System.out.println("ch1 is now " + ch);
+     }
+}
+output
+$javac chardemo2.java
+$java -Xmx128M -Xms16M chardemo2
+akshar9
+ch1 is now A
+ch1 is now B
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public class booltest{
+
+     public static void main(String []args){
+        System.out.println("akshar10");
+        boolean b ;
+        
+        b = false ;
+        System.out.println("b is " + b );
+        b = true ;
+        System.out.println("b is " + b );
+        
+        if(b)System.out.println("if statement excuted in boolean");
+        
+        b = false ;
+     }
+}
+output
+$javac booltest.java
+$java -Xmx128M -Xms16M booltest
+akshar10
+b is false
+b is true
+if statement excuted in boolean
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public class booltest{
+
+     public static void main(String []args){
+        System.out.println("akshar10");
+        boolean b ;
+        
+        b = false ;
+        System.out.println("b is " + b );
+        b = true ;
+        System.out.println("b is " + b );
+        
+        if(b)System.out.println("if statement excuted in boolean");
+        
+        b = false ;
+        if(b)System.out.println("if statement not excuted in boolean");
+        
+        //outcome of relational opertors is a boolean value 
+        System.out.println("12>9 is " + (12>9));
+     }
+}
+output
+$javac booltest.java
+$java -Xmx128M -Xms16M booltest
+akshar10
+b is false
+b is true
+if statement excuted in boolean
+12>9 is true
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public class dynamicIntialization{
+
+     public static void main(String []args){
+        System.out.println("akshar11");
+        double a = 3.0 , b = 4.0 ;
+        
+        //dynamic intializtion 
+        double c  = Math . sqrt(a * a +b * b );
+        
+        System.out.println("Hypotenus of triangle is  " + c );
+    }
+}
+output 
+$javac dynamicIntialization.java
+$java -Xmx128M -Xms16M dynamicIntialization
+akshar11
+Hypotenus of triangle is  5.0
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public class Scope{
+
+     public static void main(String []args){
+        System.out.println("akshar12");
+        int x ;
+        x=10 ;
+        if(x==10 ){
+        int y = 20 ;
+        System.out.println("x and y :" + x +" " + y  );
+         x = y *2;
+        }
+         //y = 100;
+          System.out.println("x is " + x  );
+        
+        
+     }
+}
+output
+$javac Scope.java
+$java -Xmx128M -Xms16M Scope
+akshar12
+x and y :10 20
+x is 40
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
